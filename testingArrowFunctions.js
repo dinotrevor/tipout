@@ -50,7 +50,7 @@ function multiply1() {
 	const d = document.getElementById("userInput2").value;
 	const result = a * b;
 	const result2 = c * d;
-	document.getElementById("results").innerHTML = "<p id ='shelf1'>Tipout Food:</p>" + result  + "<p id ='shelf2'>Tipout Bar:</p>" + result2 + "<br><br>";
+	document.getElementById("results").innerHTML = "<p id ='shelf1'>Food:</p>" + result  + "<p id ='shelf2'>Bar:</p>" + result2 + "<br><br>";
 	//alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
 }
 
