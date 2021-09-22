@@ -34,6 +34,28 @@ box-shadow:7px 8px 19px white;
 	
 }
 
+.results {
+	background-color:white;
+	color:red;
+	font-size:30px;
+
+
+}
+.results p {
+	color:white;
+	font-size:20px;
+}
+#shelf1 {
+	background-color:darkred;
+	
+	
+}
+
+#shelf2{
+	background-color:maroon;
+	
+}
+
 
 .button-64 {
   align-items: center;
@@ -80,7 +102,7 @@ margin-bottom:20px;
 	  rgba(0, 0, 0, .9) 1%,
       rgba(0, 0, 0, .1) 25%,
       rgba(0, 0, 0, .9) 50%);
-  padding-top:30px;
+  padding-top:35px;
 	border:1px dotted rgba(98, 11, 29, 0.87);
   border-radius: 50%;
   width: 100%;

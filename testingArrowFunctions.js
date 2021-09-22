@@ -36,10 +36,6 @@
 ///	///	///	///		const cube = x => square(x) * x;
 /
 /
-
-
-const square = x => x * x;
-const cube = x => square(x) * x;
 /
 /
 */
@@ -54,15 +50,16 @@ function multiply1() {
 	const d = document.getElementById("userInput2").value;
 	const result = a * b;
 	const result2 = c * d;
-	alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
+	document.getElementById("results").innerHTML = "<p id ='shelf1'>Tipout Food:</p>" + result  + "<p id ='shelf2'>Tipout Bar:</p>" + result2 + "<br><br>";
+	//alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
 }
 
-function multiply2() {
+/*function multiply2() {
 	const c = 0.05;
 	const d = document.getElementById("userInput2").value;
 	const result = c * d;
 	alert(result);
-}
+}*/
 
 
 
