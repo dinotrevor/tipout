@@ -50,8 +50,11 @@ const cube = x => square(x) * x;
 function multiply1() {
 	const a = 0.045;
 	const b = document.getElementById("userInput").value;
+	const c = 0.05;
+	const d = document.getElementById("userInput2").value;
 	const result = a * b;
-	alert(result);
+	const result2 = c * d;
+	alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
 }
 
 function multiply2() {
