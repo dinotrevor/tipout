@@ -16,7 +16,7 @@
 }
 
 body {
-	background-color: rgba(128, 111, 260, 1.0);
+	background-color: rgba(28, 11, 60, 1.0);
   background-image: linear-gradient(to right,
 	  rgba(0, 0, 0, .7) 1%,
       rgba(0, 0, 0, .8) 25%,
@@ -48,7 +48,7 @@ box-shadow:7px 8px 19px white;
 	
 	color:red;
 	font-size:30px;
-	 	background-color: rgba(0, 0, 89, 0.87);
+	 	background-color: rgba(0, 0, 9, 0.87);
   background-image: linear-gradient(to right,
 	  rgba(0, 0, 0, .9) 1%,
       rgba(0, 0, 0, .1) 25%,
@@ -112,7 +112,7 @@ margin-bottom:20px;
 }
 
 .button-64 span {
-  	background-color: rgba(0, 100, 250, 0.87);
+  	background-color: rgba(27, 160, 79, 0.87);
   background-image: linear-gradient(to right,
 	  rgba(0, 0, 0, .9) 1%,
       rgba(0, 0, 0, .1) 25%,
@@ -157,7 +157,7 @@ align-items:center;
 
 #show {
   align-items: center;
- 	background-color: rgba(177, 0, 29, 0.87);
+ 	background-color: rgba(27, 160, 79, 0.87);
   background-image: linear-gradient(to right,
 	  rgba(0, 0, 0, .9) 1%,
       rgba(0, 0, 0, .1) 25%,
@@ -215,6 +215,35 @@ align-items:center;
 	margin-top:20px;
 	text-align:center;
 }
+
+
+#start3{
+  align-items: center;
+ 	background-color: rgba(27, 160, 79, 0.87);
+  background-image: linear-gradient(to right,
+	  rgba(0, 0, 0, .9) 1%,
+      rgba(0, 0, 0, .1) 25%,
+      rgba(0, 0, 0, .9) 50%);
+  box-sizing: border-box;
+  color: #FFFFFF;
+  font-family: Phantomsans, sans-serif;
+  width:70px;
+	height:70px;
+
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+	font-size: 12px;
+	font-weight:1000;
+	border: 4px solid maroon;
+	border-radius:50%;
+	cursor: pointer;
+	margin-right:auto;
+	margin-left:auto;
+
+	text-align:center;
+}
 </style>
 </head>
 <body>
@@ -253,7 +282,9 @@ function multiply1() {
 	const d = document.getElementById("userInput2").value;
 	const result = a * b;
 	const result2 = c * d;
-	document.getElementById("results").innerHTML = "<p id ='shelf1'>Food:</p>" + "<p style = 'font-size:30px'>$" + result + "</p>"  + "<p id ='shelf2'>Bar:</p>" + "<p style = 'font-size:30px'>$" + result2 + "</p>" + "<br><br>";
+	document.getElementById("results").innerHTML = "<p id ='shelf1'>Food:</p>" + "<p style = 'font-size:30px'>$" + result.toFixed(2) + "<p id='hidden2'> </p>" +
+	"</p><button id = 'start3'  role = 'button' value ='submit' onclick = 'multiply3()'><span class = 'text'>Split</span></button>"  + "<p id ='shelf2'>Bar:</p>" + "<p style = 'font-size:30px'>$" +
+	result2.toFixed(2) + "</p>" + "<br><br>";
 	//alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
 }
 
@@ -291,6 +322,15 @@ function multiply2() {
 	//alert("Tipout for food sales: " + result + " Tipout for bar sales: " + result2 );
 }
 
+function multiply3() {
+	const a = 0.045;
+	const b = document.getElementById("userInput").value;
+	const result = a * b;
+	const p = prompt("How many bussers/food-runners?");
+	const q = result;
+	const v = q / p;
+	document.getElementById("hidden2").innerHTML = "$" + v + " each";
+}
 
 </script>
 </body>
